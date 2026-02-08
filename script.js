@@ -28,7 +28,7 @@ let customValueKeywords = [];
 let currentInputType = null; // 'strength' or 'value'
 
 // ==========================================
-// 강점 키워드 데이터
+// 강점 키워드 데이터 (25개 - 5x5 그리드)
 // ==========================================
 const strengthKeywords = [
     { id: 'communication', icon: '💬', name: '소통능력', desc: '명확하게 의사전달' },
@@ -42,11 +42,24 @@ const strengthKeywords = [
     { id: 'persuasion', icon: '🎯', name: '설득력', desc: '효과적인 설득' },
     { id: 'planning', icon: '📋', name: '기획력', desc: '체계적인 계획 수립' },
     { id: 'speed', icon: '⚡', name: '실행력', desc: '빠른 행동과 추진' },
-    { id: 'learning', icon: '📚', name: '학습능력', desc: '빠른 습득과 적응' }
+    { id: 'learning', icon: '📚', name: '학습능력', desc: '빠른 습득과 적응' },
+    { id: 'negotiation', icon: '🤝', name: '협상력', desc: '윈윈 협상 도출' },
+    { id: 'patience', icon: '🌱', name: '인내심', desc: '끈기 있게 지속' },
+    { id: 'flexibility', icon: '🎭', name: '유연성', desc: '상황에 맞게 대응' },
+    { id: 'focus', icon: '🎯', name: '집중력', desc: '몰입하여 집중' },
+    { id: 'strategic', icon: '♟️', name: '전략적사고', desc: '장기적 관점 수립' },
+    { id: 'multitasking', icon: '🎪', name: '멀티태스킹', desc: '여러 업무 동시처리' },
+    { id: 'time-management', icon: '⏰', name: '시간관리', desc: '효율적인 시간 활용' },
+    { id: 'drive', icon: '🚀', name: '추진력', desc: '목표를 향한 강한 동력' },
+    { id: 'listening', icon: '👂', name: '경청능력', desc: '타인 의견 경청' },
+    { id: 'critical-thinking', icon: '🤔', name: '비판적사고', desc: '논리적 판단과 분석' },
+    { id: 'data-literacy', icon: '📊', name: '데이터활용', desc: '정보 수집과 활용' },
+    { id: 'adaptability', icon: '🦎', name: '적응력', desc: '변화에 빠른 적응' },
+    { id: 'responsibility', icon: '🛡️', name: '책임감', desc: '맡은 일 완수' }
 ];
 
 // ==========================================
-// 가치관 키워드 데이터
+// 가치관 키워드 데이터 (25개 - 5x5 그리드)
 // ==========================================
 const valueKeywords = [
     { id: 'growth', icon: '📈', name: '성장', desc: '지속적인 발전과 학습' },
@@ -60,7 +73,20 @@ const valueKeywords = [
     { id: 'expertise', icon: '🎓', name: '전문성', desc: '깊이 있는 전문지식' },
     { id: 'teamwork', icon: '🤝', name: '팀워크', desc: '협력과 유대감' },
     { id: 'recognition', icon: '🏆', name: '인정', desc: '성과 인정과 칭찬' },
-    { id: 'challenge', icon: '🎮', name: '도전', desc: '어려운 과제 해결' }
+    { id: 'challenge', icon: '🎮', name: '도전', desc: '어려운 과제 해결' },
+    { id: 'creative-work', icon: '🎨', name: '창의성', desc: '창의적 작업 환경' },
+    { id: 'diversity', icon: '🌈', name: '다양성', desc: '다채로운 경험' },
+    { id: 'autonomy', icon: '🗝️', name: '자율성', desc: '자기주도 업무 수행' },
+    { id: 'fulfillment', icon: '💝', name: '보람', desc: '일의 의미와 만족' },
+    { id: 'reputation', icon: '⭐', name: '명성', desc: '브랜드와 인지도' },
+    { id: 'work-flexibility', icon: '🌊', name: '유연성', desc: '시간과 장소 자유' },
+    { id: 'collaboration', icon: '🤲', name: '협력', desc: '함께 만드는 가치' },
+    { id: 'achievement', icon: '🎯', name: '성취감', desc: '목표 달성의 기쁨' },
+    { id: 'social-impact', icon: '🌱', name: '사회공헌', desc: '더 나은 세상 만들기' },
+    { id: 'global', icon: '🌏', name: '글로벌', desc: '국제적 시야와 기회' },
+    { id: 'learning-opportunity', icon: '📖', name: '학습기회', desc: '지속적 교육 지원' },
+    { id: 'leadership-opportunity', icon: '👔', name: '리더기회', desc: '리더십 성장 가능성' },
+    { id: 'benefits', icon: '🎁', name: '복지혜택', desc: '다양한 복리후생' }
 ];
 
 // ==========================================
